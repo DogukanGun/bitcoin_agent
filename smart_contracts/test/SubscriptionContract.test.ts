@@ -488,7 +488,7 @@ describe("SubscriptionContract", function () {
       // Try to pause
       await expect(
         subscriptionContract.connect(user).pause()
-      ).to.be.revertedWith("Subscription cancelled");
+      ).to.be.revertedWith("Invalid status");
     });
   });
 
